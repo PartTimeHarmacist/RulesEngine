@@ -12,3 +12,5 @@ for i in item_queue:
     if result.get('final') == False and rule.end_processing:
       break
 ```
+
+Based on the above example, rules could be loaded from an external source on script/program load, and applied dynamically.  Given there is a separate process to allow for creation/modification of rules, this would separate the end user from needing to code at all; while allowing for a standard that the developer can then base future code off of.
